@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}cd ~/Desktop/studioclub-1
+git add .
+git commit -m "fix: add vercel routing config"
+git push
