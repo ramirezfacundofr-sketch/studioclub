@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -7,6 +7,23 @@
 
 @layer base {
   body {
-    @apply bg-[#FAFAFA] text-[#555555] font-sans antialiased;
+    @apply bg-white text-[#1A1A1A] font-sans antialiased;
+    font-feature-settings: 'cv11', 'ss01', 'ss03';
+    letter-spacing: -0.005em;
   }
 }
+
+@keyframes marquee-scroll {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+/* Marquee brand hover colors */
+.ml-google:hover     { color: #4285F4; }
+.ml-gmaps:hover      { color: #34A853; }
+.ml-openai:hover     { color: #10A37F; }
+.ml-instagram:hover  { color: #E1306C; }
+.ml-facebook:hover   { color: #1877F2; }
+.ml-tiktok:hover     { color: #FFFFFF; }
+.ml-youtube:hover    { color: #FF0000; }
+.ml-whatsapp:hover   { color: #25D366; }
