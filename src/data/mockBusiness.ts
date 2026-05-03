@@ -51,6 +51,6 @@ export const mockBusiness: BusinessData = {
   brand: {
     logoUrl: "",
     heroUrl: "",
-    primaryColor: "#6366F1",
+    primaryColor: "#B8952A",
   },
 };
